@@ -14,6 +14,7 @@ export class DocumentService {
   ) {}
 
   async create(body: any, files: Express.Multer.File[]): Promise<Document> {
+    console.log(body);
     const created = this.docRepo.create(body as Partial<Document>);
     if (Array.isArray(created)) {
       throw new Error('Expected a single document payload, received an array');

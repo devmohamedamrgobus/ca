@@ -13,7 +13,7 @@ export class Document {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column({ type: 'nvarchar', length: 50 })
+  @Column({ type: 'nvarchar', length: 200 })
   box_id: string;
 
   @Column({ type: 'uniqueidentifier' })

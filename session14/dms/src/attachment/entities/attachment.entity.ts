@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
 import { Document } from '../../document/entities/document.entity';
 
-@Entity('attachment')
+@Entity('attachments')
 export class Attachment {
   @PrimaryGeneratedColumn('uuid')
   id: string;
